@@ -1,9 +1,8 @@
 
-import { NextRequest } from 'next/server';
 import { fetchAnalysis } from '@/lib/gpt';
 import { saveToFile, readFromFile } from '@/lib/store';
 
-export async function POST(req: NextRequest) {
+export async function POST() {
     try {
         const result = await fetchAnalysis();
         await saveToFile(result);

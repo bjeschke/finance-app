@@ -4,7 +4,7 @@ import { existsSync } from 'fs';
 
 const filePath = './data/latest.json';
 
-export async function saveToFile(data: any) {
+export async function saveToFile(data: unknown) {
     const dir = dirname(filePath);
     if (!existsSync(dir)) {
         await mkdir(dir, { recursive: true });
