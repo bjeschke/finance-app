@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import { BadgePercent, TrendingUp, TrendingDown, Activity, Newspaper } from 'lucide-react';
 
@@ -8,6 +7,7 @@ interface SectorInsight {
   trend: 'bullish' | 'bearish' | 'neutral';
   reason: string;
   confidence: number;
+  top_stocks?: { ticker: string; name: string }[];
 }
 
 export default function Home() {
@@ -70,10 +70,21 @@ export default function Home() {
                   <p className="text-slate-600 text-sm mb-2">
                     <strong>Begründung:</strong> {s.reason}
                   </p>
-                  <div className="flex items-center text-xs text-gray-500">
+                  <div className="flex items-center text-xs text-gray-500 mb-2">
                     <BadgePercent className="w-4 h-4 mr-1" />
                     Confidence: {(s.confidence * 100).toFixed(0)}%
                   </div>
+                  {s.top_stocks && s.top_stocks.length > 0 && (
+                      <p className="text-sm text-slate-600">
+                        <strong>Top-Aktien:</strong>{' '}
+                        {s.top_stocks.map((stock, i) => (
+                            <span key={stock.ticker} className="inline-block mr-2">
+                      <span title={stock.name}>{stock.ticker}</span>
+                              {i < s.top_stocks!.length - 1 && ','}
+                    </span>
+                        ))}
+                      </p>
+                  )}
                 </div>
             ))}
           </div>

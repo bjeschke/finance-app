@@ -1,13 +1,27 @@
 export async function fetchAnalysis() {
-    const prompt = `Liefere makroökonomische Nachrichten und analysiere Sektoren. Format:
+    const prompt = `
+Du bist ein Finanzanalyst. Antworte ausschließlich im folgenden JSON-Format — **ohne Vorrede, ohne Erklärung**.
+
 {
   "news": ["..."],
   "sectors": [
-    { "sector": "...", "trend": "bullish", "reason": "...", "confidence": 0.9 }
+    {
+      "sector": "string",
+      "trend": "bullish" | "bearish" | "neutral",
+      "reason": "string",
+      "confidence": number (0–1),
+         "top_stocks": [
+        { "ticker": "XOM", "name": "ExxonMobil" },
+        { "ticker": "CVX", "name": "Chevron" }
+      ]
+    }
   ]
-}`;
+}
 
-    console.log('Hallo');
+Erstelle auf Basis heutiger makroökonomischer Entwicklungen eine Liste von relevanten Nachrichten und analysiere, welche Sektoren wahrscheinlich steigen oder fallen.
+Gib für jeden Sektor auch 2–5 passende Aktien-Ticker zurück.
+Nochmals: **keine Erklärung, keine Umschreibung – nur das JSON-Objekt wie oben.**
+`;
 
     const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
