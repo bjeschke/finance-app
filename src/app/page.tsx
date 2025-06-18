@@ -1,6 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { BadgePercent, TrendingUp, TrendingDown, Activity, Newspaper, LineChart } from 'lucide-react';
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 interface StockItem {
   ticker: string;

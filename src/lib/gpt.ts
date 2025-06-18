@@ -34,6 +34,9 @@ Gib eine zusätzliche Einschätzung zum Gesamtmarkt:
 Antworte ausschließlich im folgenden JSON-Format:
 
 {
+    "timestamp": "2023-10-01T12:00:00Z",
+},
+{
   "news": ["Kurze Nachricht 1", "Kurze Nachricht 2", "..."],
   "sp500": {
     "trend": "neutral",

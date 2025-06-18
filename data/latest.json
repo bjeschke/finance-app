@@ -1,13 +1,14 @@
 {
+  "timestamp": "2025-06-18T15:29:44Z",
   "news": [
-    "Inflationsrate in den USA steigt auf 4,2%.",
-    "Fed erhöht Leitzins um 25 Basispunkte.",
-    "Spannungen im Nahen Osten treiben Ölpreise in die Höhe.",
-    "Rohstoffpreise für Metalle steigen aufgrund von Lieferengpässen."
+    "Inflationsrate in den USA sinkt auf 3,2%.",
+    "EZB erhöht Leitzins um 25 Basispunkte.",
+    "Spannungen im Nahen Osten führen zu steigenden Ölpreisen.",
+    "Goldpreis stabilisiert sich nach jüngstem Anstieg."
   ],
   "sp500": {
     "trend": "neutral",
-    "reason": "Markt reagiert gemischt auf Zinsentscheidung und Inflationsdaten.",
+    "reason": "Markt reagiert abwartend auf gemischte makroökonomische Signale.",
     "confidence": 0.6
   },
   "sectors": [
@@ -29,9 +30,9 @@
     },
     {
       "sector": "Werkstoffe",
-      "trend": "bullish",
-      "reason": "Rohstoffpreise steigen aufgrund von Lieferengpässen.",
-      "confidence": 0.7,
+      "trend": "neutral",
+      "reason": "Stabile Rohstoffpreise trotz geopolitischer Unsicherheiten.",
+      "confidence": 0.5,
       "top_stocks": [
         {
           "ticker": "BHP",
@@ -45,9 +46,9 @@
     },
     {
       "sector": "Industrie",
-      "trend": "neutral",
-      "reason": "Gemischte Signale aus der globalen Lieferkette.",
-      "confidence": 0.5,
+      "trend": "bearish",
+      "reason": "Höhere Zinsen belasten Investitionen.",
+      "confidence": 0.7,
       "top_stocks": [
         {
           "ticker": "GE",
@@ -61,8 +62,8 @@
     },
     {
       "sector": "zyklischer Konsum",
-      "trend": "bearish",
-      "reason": "Höhere Zinsen belasten Konsumausgaben.",
+      "trend": "neutral",
+      "reason": "Verbrauchervertrauen bleibt stabil.",
       "confidence": 0.6,
       "top_stocks": [
         {
@@ -77,9 +78,9 @@
     },
     {
       "sector": "Basiskonsumgüter",
-      "trend": "neutral",
-      "reason": "Stabile Nachfrage trotz Inflationsdruck.",
-      "confidence": 0.6,
+      "trend": "bullish",
+      "reason": "Inflationsrückgang unterstützt Kaufkraft.",
+      "confidence": 0.7,
       "top_stocks": [
         {
           "ticker": "PG",
@@ -94,8 +95,8 @@
     {
       "sector": "Gesundheitswesen",
       "trend": "neutral",
-      "reason": "Regulatorische Unsicherheiten belasten den Sektor.",
-      "confidence": 0.5,
+      "reason": "Stabile Nachfrage nach Gesundheitsdienstleistungen.",
+      "confidence": 0.6,
       "top_stocks": [
         {
           "ticker": "JNJ",
@@ -109,8 +110,8 @@
     },
     {
       "sector": "Finanzwesen",
-      "trend": "bullish",
-      "reason": "Höhere Zinsen verbessern die Margen der Banken.",
+      "trend": "bearish",
+      "reason": "Zinsanhebungen belasten Kreditnachfrage.",
       "confidence": 0.7,
       "top_stocks": [
         {
@@ -125,9 +126,9 @@
     },
     {
       "sector": "Informationstechnologie",
-      "trend": "neutral",
-      "reason": "Technologieaktien schwanken aufgrund von Zinsängsten.",
-      "confidence": 0.5,
+      "trend": "bullish",
+      "reason": "Technologieaktien profitieren von Innovationsdrang.",
+      "confidence": 0.8,
       "top_stocks": [
         {
           "ticker": "AAPL",
@@ -141,9 +142,9 @@
     },
     {
       "sector": "Kommunikationsdienste",
-      "trend": "bearish",
-      "reason": "Werbeausgaben sinken in einem unsicheren wirtschaftlichen Umfeld.",
-      "confidence": 0.6,
+      "trend": "neutral",
+      "reason": "Gemischte Signale aus dem Werbemarkt.",
+      "confidence": 0.5,
       "top_stocks": [
         {
           "ticker": "GOOGL",
@@ -158,8 +159,8 @@
     {
       "sector": "Versorger",
       "trend": "neutral",
-      "reason": "Stabile Nachfrage trotz steigender Betriebskosten.",
-      "confidence": 0.5,
+      "reason": "Stabile Nachfrage trotz Zinsdruck.",
+      "confidence": 0.6,
       "top_stocks": [
         {
           "ticker": "NEE",
@@ -174,7 +175,7 @@
     {
       "sector": "Immobilien",
       "trend": "bearish",
-      "reason": "Steigende Zinsen belasten den Immobilienmarkt.",
+      "reason": "Steigende Zinsen belasten Immobilienfinanzierung.",
       "confidence": 0.7,
       "top_stocks": [
         {
