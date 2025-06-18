@@ -29,7 +29,7 @@ export default function Home() {
   const [timestamp, setTimestamp] = useState<string>('');
 
   useEffect(() => {
-    fetch('/api/update')
+    fetch('/latest.json')
         .then((res) => res.json())
         .then((data) => {
           setNews(data.news || []);
@@ -37,7 +37,7 @@ export default function Home() {
           setSp500(data.sp500 || null);
           if (data.timestamp) setTimestamp(data.timestamp);
         })
-        .catch((err) => console.error('Fehler beim Laden:', err));
+        .catch(console.error);
   }, []);
 
   const trendIcon = (trend: 'bullish' | 'bearish' | 'neutral') => {
