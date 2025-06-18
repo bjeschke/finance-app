@@ -1,53 +1,190 @@
 {
   "news": [
-    "Federal Reserve raises interest rates by 0.25%",
-    "Oil prices surge due to geopolitical tensions in the Middle East",
-    "Tech sector sees robust earnings amid increased demand for remote work solutions",
-    "Automobile industry struggles with global chip shortage"
+    "Inflationsrate in den USA steigt auf 4,2%.",
+    "Fed erhöht Leitzins um 25 Basispunkte.",
+    "Spannungen im Nahen Osten treiben Ölpreise in die Höhe.",
+    "Rohstoffpreise für Metalle steigen aufgrund von Lieferengpässen."
   ],
+  "sp500": {
+    "trend": "neutral",
+    "reason": "Markt reagiert gemischt auf Zinsentscheidung und Inflationsdaten.",
+    "confidence": 0.6
+  },
   "sectors": [
     {
-      "sector": "Financials",
+      "sector": "Energie",
       "trend": "bullish",
-      "reason": "Interest rate hike",
+      "reason": "Ölpreis steigt wegen Nahost-Spannungen.",
       "confidence": 0.8,
       "top_stocks": [
-        "JPM",
-        "BAC",
-        "GS"
+        {
+          "ticker": "XOM",
+          "name": "ExxonMobil"
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron"
+        }
       ]
     },
     {
-      "sector": "Energy",
+      "sector": "Werkstoffe",
       "trend": "bullish",
-      "reason": "Rise in oil prices",
-      "confidence": 0.85,
+      "reason": "Rohstoffpreise steigen aufgrund von Lieferengpässen.",
+      "confidence": 0.7,
       "top_stocks": [
-        "XOM",
-        "CVX",
-        "BP"
+        {
+          "ticker": "BHP",
+          "name": "BHP Group"
+        },
+        {
+          "ticker": "RIO",
+          "name": "Rio Tinto"
+        }
       ]
     },
     {
-      "sector": "Technology",
-      "trend": "bullish",
-      "reason": "Strong earnings and demand for remote work solutions",
-      "confidence": 0.9,
+      "sector": "Industrie",
+      "trend": "neutral",
+      "reason": "Gemischte Signale aus der globalen Lieferkette.",
+      "confidence": 0.5,
       "top_stocks": [
-        "AAPL",
-        "MSFT",
-        "GOOGL"
+        {
+          "ticker": "GE",
+          "name": "General Electric"
+        },
+        {
+          "ticker": "HON",
+          "name": "Honeywell"
+        }
       ]
     },
     {
-      "sector": "Automobiles",
+      "sector": "zyklischer Konsum",
       "trend": "bearish",
-      "reason": "Global chip shortage",
-      "confidence": 0.75,
+      "reason": "Höhere Zinsen belasten Konsumausgaben.",
+      "confidence": 0.6,
       "top_stocks": [
-        "GM",
-        "F",
-        "TSLA"
+        {
+          "ticker": "AMZN",
+          "name": "Amazon"
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla"
+        }
+      ]
+    },
+    {
+      "sector": "Basiskonsumgüter",
+      "trend": "neutral",
+      "reason": "Stabile Nachfrage trotz Inflationsdruck.",
+      "confidence": 0.6,
+      "top_stocks": [
+        {
+          "ticker": "PG",
+          "name": "Procter & Gamble"
+        },
+        {
+          "ticker": "KO",
+          "name": "Coca-Cola"
+        }
+      ]
+    },
+    {
+      "sector": "Gesundheitswesen",
+      "trend": "neutral",
+      "reason": "Regulatorische Unsicherheiten belasten den Sektor.",
+      "confidence": 0.5,
+      "top_stocks": [
+        {
+          "ticker": "JNJ",
+          "name": "Johnson & Johnson"
+        },
+        {
+          "ticker": "PFE",
+          "name": "Pfizer"
+        }
+      ]
+    },
+    {
+      "sector": "Finanzwesen",
+      "trend": "bullish",
+      "reason": "Höhere Zinsen verbessern die Margen der Banken.",
+      "confidence": 0.7,
+      "top_stocks": [
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase"
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America"
+        }
+      ]
+    },
+    {
+      "sector": "Informationstechnologie",
+      "trend": "neutral",
+      "reason": "Technologieaktien schwanken aufgrund von Zinsängsten.",
+      "confidence": 0.5,
+      "top_stocks": [
+        {
+          "ticker": "AAPL",
+          "name": "Apple"
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft"
+        }
+      ]
+    },
+    {
+      "sector": "Kommunikationsdienste",
+      "trend": "bearish",
+      "reason": "Werbeausgaben sinken in einem unsicheren wirtschaftlichen Umfeld.",
+      "confidence": 0.6,
+      "top_stocks": [
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet"
+        },
+        {
+          "ticker": "FB",
+          "name": "Meta Platforms"
+        }
+      ]
+    },
+    {
+      "sector": "Versorger",
+      "trend": "neutral",
+      "reason": "Stabile Nachfrage trotz steigender Betriebskosten.",
+      "confidence": 0.5,
+      "top_stocks": [
+        {
+          "ticker": "NEE",
+          "name": "NextEra Energy"
+        },
+        {
+          "ticker": "DUK",
+          "name": "Duke Energy"
+        }
+      ]
+    },
+    {
+      "sector": "Immobilien",
+      "trend": "bearish",
+      "reason": "Steigende Zinsen belasten den Immobilienmarkt.",
+      "confidence": 0.7,
+      "top_stocks": [
+        {
+          "ticker": "AMT",
+          "name": "American Tower"
+        },
+        {
+          "ticker": "PLD",
+          "name": "Prologis"
+        }
       ]
     }
   ]
