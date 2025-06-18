@@ -1,0 +1,27 @@
+{
+  "news": [
+    "Die US-Notenbank Federal Reserve hat ihre Leitzinsen unverändert gelassen und signalisiert, dass sie bis mindestens 2023 bei nahezu Null bleiben werden. Die Entscheidung wurde getroffen, um die Wirtschaft zu stützen, die durch die anhaltende Coronavirus-Pandemie belastet ist.",
+    "Die Arbeitslosenquote in der Eurozone ist im August auf 8,1% gestiegen, was auf die anhaltenden Auswirkungen der Coronavirus-Pandemie hinweist. Dies ist der höchste Stand seit Juni 2018.",
+    "China meldet einen Anstieg der Industrieproduktion um 5,6% im August im Vergleich zum Vorjahr. Dies übertrifft die Erwartungen der Analysten und zeigt die anhaltende Erholung der zweitgrößten Wirtschaft der Welt."
+  ],
+  "sectors": [
+    {
+      "sector": "Finanzdienstleistungen",
+      "trend": "bearish",
+      "reason": "Die Entscheidung der Federal Reserve, die Zinsen nahe Null zu halten, könnte die Gewinne der Banken belasten, da sie die Nettozinsmarge - die Differenz zwischen den Zinsen, die sie für Kredite erhalten, und den Zinsen, die sie für Einlagen zahlen - verringert.",
+      "confidence": 0.85
+    },
+    {
+      "sector": "Arbeitsmarkt",
+      "trend": "bearish",
+      "reason": "Die steigende Arbeitslosenquote in der Eurozone könnte den Konsum und damit das Wirtschaftswachstum belasten.",
+      "confidence": 0.8
+    },
+    {
+      "sector": "Industrie",
+      "trend": "bullish",
+      "reason": "Der Anstieg der chinesischen Industrieproduktion könnte ein positives Zeichen für die globale Nachfrage nach Industriegütern sein.",
+      "confidence": 0.75
+    }
+  ]
+}
