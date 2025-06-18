@@ -1,8 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { BadgePercent, TrendingUp, TrendingDown, Activity, Newspaper, LineChart } from 'lucide-react';
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
+import Timestamp from "@/app/components/Timestamp";
 
 interface StockItem {
   ticker: string;
@@ -57,7 +56,7 @@ export default function Home() {
           </h1>
           {timestamp && (
               <p className="text-center text-sm text-gray-500 mb-8">
-                Letzte Aktualisierung: {timestamp}
+                {timestamp && <Timestamp iso={timestamp} />}
               </p>
           )}
 
