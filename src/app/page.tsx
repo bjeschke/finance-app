@@ -29,7 +29,7 @@ export default function Home() {
   const [timestamp, setTimestamp] = useState<string>('');
 
   useEffect(() => {
-    fetch('/latest.json')
+    fetch('https://finance-sektor-daten.s3.eu-central-1.amazonaws.com/latest.json')
         .then((res) => res.json())
         .then((data) => {
           setNews(data.news || []);
