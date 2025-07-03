@@ -1,5 +1,5 @@
 'use client';
-import { BarChart3, Clock, RefreshCw } from 'lucide-react';
+import { BarChart3, Clock } from 'lucide-react';
 
 interface HeaderProps {
     timestamp?: string;

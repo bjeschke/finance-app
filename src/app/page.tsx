@@ -44,7 +44,6 @@ export default function Home() {
   const [sectors, setSectors] = useState<SectorInsight[]>([]);
   const [sp500, setSp500] = useState<Sp500Insight | null>(null);
   const [timestamp, setTimestamp] = useState<string>('');
-  const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async () => {
     try {
@@ -67,7 +66,6 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 flex flex-col">
         <Header
             timestamp={timestamp}
-            isLoading={isLoading}
         />
 
         <main className="flex-1 max-w-7xl mx-auto px-6 py-8">
